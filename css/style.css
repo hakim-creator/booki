@@ -180,7 +180,7 @@ a {
 
 .search__input {
     display: flex;
-    height: 49px;
+    height: 45px;
     align-items: center;
     gap: 24px;
     border: 1px solid var(--Blue, #f2f2f2);
@@ -214,9 +214,10 @@ a {
     border-radius: 0px 15px 15px 0px;
     border: 1px solid var(--Blue, #0065fc);
     background: var(--Blue, #0065fc);
-    .fa-solid{
-        display: none;
-    }
+    
+}
+.search-btn .fa-solid{
+    display: none;
 }
 
 .search-btn:hover {
@@ -534,27 +535,30 @@ a {
 
     .header__nav__menu ul {
         width: 100%;
-        justify-content: space-evenly;
+        gap: 0;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        justify-items: center;
     }
-    .header-nav-link {
-        justify-content: space-between;
-    }
+    
 
     .header__logo {
         padding: 30px;
     }
 
     .header__nav__menu .header-nav-link:hover {
-        text-decoration: underline;
-        text-underline-offset: 15px;
+        text-decoration: none;
+        border-bottom-color: #0065fc;
+        border-bottom-style: solid;
     }
     .header__nav__menu .header-nav-link {
-        text-decoration: underline;
-        text-underline-offset: 15px;
-        text-decoration-color: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        border-bottom-color: #F2F2F2;
+        border-bottom-style: solid;
+        
+    }
+    .header__nav__menu .header-nav-link a{
+        padding-bottom: 15px;
     }
 
     button.search-btn span {
@@ -564,10 +568,12 @@ a {
     button.search-btn {
         border-radius: 15px;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-        .fa-solid {
-            display: block;
-        }
+        
     }
+    button.search-btn .fa-solid {
+        display: block;
+    }
+
     .fa-solid {
         color: var(--main-color);
     }
@@ -581,6 +587,9 @@ a {
     }
     .search__form {
         width: 100%;
+        border: 1px solid var(--Grey, #F2F2F2);
+        border-radius: 15px;
+        
     }
 
     .button-second-primary {
@@ -590,6 +599,7 @@ a {
 
     .search__input{
         width: 100%;
+        border: none;
     }
 
     .hebergements-and-populaires {
