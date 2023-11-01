@@ -157,18 +157,17 @@ a {
     background-color: white;
     border-radius: 25px;
     border: 2px solid var(--grey-tint-2, #d9d9d9);
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 .button-second-primary:hover {
     background-color: #deebff;
 }
 
-.button-second-primary p {
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
+
 
 /* Barre de recherche*/
 
@@ -213,7 +212,7 @@ a {
     border-radius: 0px 15px 15px 0px;
     border: 1px solid var(--Blue, #0065fc);
     background: var(--Blue, #0065fc);
-    .svg__search {
+    .fa-solid{
         display: none;
     }
 }
@@ -555,14 +554,14 @@ a {
         text-decoration-color: #f2f2f2;
     }
 
-    button.search-btn p {
+    button.search-btn span {
         display: none;
     }
 
     button.search-btn {
         border-radius: 15px;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-        .svg__search {
+        .fa-solid {
             display: block;
         }
     }
