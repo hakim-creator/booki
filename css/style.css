@@ -161,6 +161,8 @@ a {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    height: 50px;
+    width: 150px;
 }
 
 .button-second-primary:hover {
