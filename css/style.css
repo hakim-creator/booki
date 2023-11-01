@@ -405,8 +405,9 @@ a {
 .activites-section {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    justify-content: space-between;
     padding: 30px;
+    row-gap: 30px;
 }
 .activites-section-title {
     flex-basis: 100%;
@@ -630,6 +631,7 @@ a {
     .activites-section {
         margin-top: 35px;
         padding: 10px;
+        row-gap: 30px;
     }
     .activites-section a {
         width: 100%;
