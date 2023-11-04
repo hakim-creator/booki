@@ -39,6 +39,7 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
+    min-width: 320px;
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -85,6 +86,7 @@ a {
     justify-content: space-between;
     align-self: stretch;
     width: 100%;
+    
 }
 
 .header__logo {
@@ -104,6 +106,7 @@ a {
     list-style-type: none;
     padding: 0;
     display: flex;
+    margin: 0;
     justify-content: flex-end;
     align-items: flex-end;
     gap: 68px;
@@ -111,12 +114,17 @@ a {
 .header__nav__menu .header-nav-link {
     text-decoration: none;
     color: #000;
+    padding-top: 20px;
 }
 .header__nav__menu .header-nav-link:hover {
     text-decoration: none;
-    color: var(--Blue, #0065fc);
-    text-decoration: overline;
+    
+    color: var(--Blue, #0065FC);
+    
+    border-top-color: #0065fc;
+    border-top-style: solid;
 }
+
 
 .header__nav__menu {
     display: flex;
@@ -124,6 +132,7 @@ a {
     padding: 0px 25px;
     flex-direction: column;
     align-items: center;
+    align-items: flex-end;
     gap: 68px;
 }
 
@@ -414,6 +423,10 @@ a {
     flex-basis: 100%;
 }
 
+.activites-section .card .card-title h4{
+    margin: 0;
+}
+
 /*Footer*/
 
 .container__footer {
@@ -498,10 +511,14 @@ a {
     }
 
     .activites-section .card .card-title {
-        height: 70px;
+        
     }
+
+    
     .activites-section .card {
         width: 193px;
+        height: 282px;
+        max-height: 282px;
     }
 
     .container__footer ul {
@@ -549,6 +566,7 @@ a {
         text-decoration: none;
         border-bottom-color: #0065fc;
         border-bottom-style: solid;
+        border-top: none;
     }
     .header__nav__menu .header-nav-link {
         display: flex;
@@ -617,10 +635,9 @@ a {
 
     .hebergements-and-populaires section {
         border-radius: 0;
-        padding: 0 20px;
-        padding-bottom: 30px;
-        padding-top: 20px;
-        margin-bottom: 15px;
+        
+        padding: 20px;
+        margin: 15px 0 0 0;
     }
     .populaires {
         background-color: var(--main-bg-color);
@@ -640,7 +657,7 @@ a {
 
     .activites-section {
         margin-top: 35px;
-        padding: 10px;
+        padding: 30px;
         row-gap: 30px;
     }
     .activites-section a {
@@ -653,8 +670,11 @@ a {
     .container__footer {
         display: flex;
         flex-direction: column;
-        gap: 50px;
+        gap: 0;
         
+    }
+    .container__footer ul {
+        margin: 0;
     }
     .filterBar {
         display: flex;
@@ -670,6 +690,8 @@ a {
 
     .activites-section .card {
         width: 100%;
+        max-height: initial;
+        height: initial;
     }
     .headline {
         padding: 0 20px;
