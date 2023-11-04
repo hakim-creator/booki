@@ -282,10 +282,12 @@ a {
     align-self: stretch;
     align-items: center;
     gap: 10px;
+    margin-bottom: 35px;
 }
-.info-text{
+
+.infoBar .info-text p{
+    margin: 0;
     font-size: 17px;
-    
 }
 
 /****** Hebergements And Populaires ***********/
@@ -642,6 +644,7 @@ a {
 
     .hebergements-and-populaires {
         flex-direction: column-reverse;
+        gap: 15px;
     }
     .populaires-cards {
         flex-direction: column;
@@ -656,10 +659,14 @@ a {
         border-radius: 0;
         
         padding: 20px;
-        margin: 15px 0 0 0;
+        margin: 0;
     }
     .populaires {
         background-color: var(--main-bg-color);
+    }
+
+    .populaires-cards .card{
+        margin-top: 15px;
     }
     .hebergements {
         background-color: initial;
@@ -673,11 +680,14 @@ a {
     .hebergements-cards img {
         height: 121px;
     }
+    .hebergements-cards{
+        row-gap: 15px;
+    }
 
     .activites-section {
         margin-top: 35px;
         padding: 30px;
-        row-gap: 30px;
+        row-gap: 15px;
     }
     .activites-section a {
         width: 100%;
