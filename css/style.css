@@ -7,6 +7,8 @@
     --main-color: #0065fc;
     --main-bg-color: #f2f2f2;
     --filter-bg-color: #deebff;
+    --white-bg-color: white;
+    --black--bg-color:black;
     --filter-border-color:#D9D9D9
 }
 
@@ -14,7 +16,7 @@
     color: var(--main-color);
 }
 .search__form .fa-solid {
-    color: #000;
+    color: var(--black--bg-color);
 }
 .icon-position{
     display: flex;
@@ -27,7 +29,7 @@
 }
 
 #loupe {
-    color: white;
+    color: var(--white-bg-color);
 }
 
 body {
@@ -56,7 +58,7 @@ a {
 }
 
 .card {
-    background-color: white;
+    background-color: var(--white-bg-color);
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -122,9 +124,9 @@ a {
 .header__nav__menu .header-nav-link:hover {
     text-decoration: none;
     
-    color: var(--Blue, #0065FC);
+    color: var(--main-color);
     
-    border-top-color: #0065fc;
+    border-top-color: var(--main-color);
     border-top-style: solid;
 }
 
@@ -150,9 +152,7 @@ a {
 .filterBar__title {
     /* Title/Filter */
     font-size: 18px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
 }
 
 .filterBar__button {
@@ -166,12 +166,10 @@ a {
     align-items: center;
     gap: 10px;
     padding: 4px 19px;
-    background-color: white;
+    background-color: var(--white-bg-color);
     border-radius: 25px;
     border: 2px solid var(--filter-border-color);
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     height: 50px;
     font-size: 18px;
 }
@@ -198,13 +196,11 @@ a {
 
     text-align: center;
     font-size: 18px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
 }
 
 .search__input::placeholder {
-    color: var(--Black, #000);
+    color: var(--black--bg-color);
 }
 
 .search__form {
@@ -220,12 +216,11 @@ a {
     align-items: center;
     gap: 10px;
     cursor: pointer;
-    color: var(--White, #fff);
+    color: var(--white-bg-color);
     border-radius: 0px 15px 15px 0px;
-    border: 1px solid var(--Blue, #0065fc);
-    background: var(--Blue, #0065fc);
+    border: 1px solid var(--main-color);
+    background: var(--main-color);
     font-size: 18px;
-    font-style: normal;
     font-weight: 700;
     
 }
@@ -234,31 +229,26 @@ a {
 }
 
 .search-btn:hover {
-    background-color: white;
-    color: #000;
+    background-color: var(--white-bg-color);
+    color: var(--black--bg-color);
 }
 
 
 
 .headline__title h1 {
-    color: #000;
+    color: var(--black--bg-color);
 
     /* Title/Section */
     font-size: 23px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+
     margin: 30px 0px 8px 0px;
 }
 
 .headline__title p {
-    color: black;
 
-    /* Footer/Link */
+    
     font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+
     margin: 0;
 }
 
@@ -462,11 +452,8 @@ a {
 
 .footer .container__footer .footer__title {
     text-decoration: none;
-    color: #000;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+
     font-weight: bold;
 }
 
@@ -577,7 +564,7 @@ a {
 
     .header__nav__menu .header-nav-link:hover {
         text-decoration: none;
-        border-bottom-color: #0065fc;
+        border-bottom-color: var(--main-color);
         border-bottom-style: solid;
         border-top: none;
     }
