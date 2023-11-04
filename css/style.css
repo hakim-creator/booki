@@ -652,7 +652,7 @@ a {
         width: initial;
     }
     .hebergements-cards img {
-        height: 248px;
+        height: 121px;
     }
 
     .activites-section {
@@ -664,7 +664,7 @@ a {
         width: 100%;
     }
     .activites-section .card .card__activites img {
-        height: 247px;
+        height: 150px;
         width: 100%;
     }
     .container__footer {
