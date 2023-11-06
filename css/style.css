@@ -240,7 +240,7 @@ a {
     color: var(--black--bg-color);
 
     /* Title/Section */
-    font-size: 22px;
+    font-size: 23px;
 
     margin: 30px 0px 8px 0px;
 }
@@ -248,7 +248,7 @@ a {
 .headline__title p {
 
     
-    font-size: 16px;
+    font-size: 16.5px;
 
     margin: 0;
 }
