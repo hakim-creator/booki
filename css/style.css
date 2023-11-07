@@ -195,7 +195,8 @@ a {
     align-items: center;
     gap: 24px;
     border: 1px solid var(--main-bg-color);
-
+    border-left: none;
+    border-right: none;
     text-align: center;
     font-size: 18px;
     font-weight: 700;
@@ -327,6 +328,7 @@ a {
 
 .hebergements-cards img {
     height: 110px;
+    width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
