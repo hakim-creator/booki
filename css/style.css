@@ -591,6 +591,7 @@ a {
         justify-content: center;
         border-bottom-color: var(--main-bg-color);
         border-bottom-style: solid;
+        padding-top: 0;
         
     }
     .header-nav-menu .header-nav-link a{
